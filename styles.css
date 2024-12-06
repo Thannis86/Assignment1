@@ -9,12 +9,36 @@ body {
   background-repeat: no-repeat;
 }
 
+p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #5a4556;
+  -webkit-text-stroke-width: 0.2px;
+  -webkit-text-stroke-color: #efbaad;
+  font-size: 2rem;
+  margin: 10px;
+}
+
+header {
+  height: 120px;
+  border: solid #efbaad;
+  text-align: center;
+}
+
+main {
+}
+
+footer {
+  display: flex;
+  height: 1000px;
+  justify-content: center;
+}
+
 .menu {
   display: flex;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-align: center;
   justify-content: space-evenly;
-  color: #73a788;
+  color: #5a4556;
   width: 800px;
   font-size: 20px;
   /* Text outline support
@@ -23,7 +47,7 @@ body {
   weebkit-text-stroke-color determines the colour of the outline
   Unsure what -webkit is*/
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-color: #efbaad;
   /* Text outline further support
   https://stackoverflow.com/questions/26634201/add-stroke-around-text-on-the-outside-with-css
   paint-order changes how the stroke is filled (Might affect other colors too, but currently unsure). As I selected stroke, it turns the stroke into an actual outline, instead of creating the stroke inside the text */
@@ -31,23 +55,57 @@ body {
 }
 
 .menu2:hover {
-  background-color: #e3c6ad;
+  background-color: #efbaad;
   -webkit-text-stroke-width: 0px;
-  -webkit-text-stroke-color: white;
-  border: solid 2px #e3c6ad;
+  -webkit-text-stroke-color: #efbaad;
+  border: solid 2px #efbaad;
 }
 
 .menu2 {
   width: 160px;
-  border: solid 2px #73a788;
+  border: solid 2px #5a4556;
   padding: 5px;
 }
 
+.maintext {
+  font-size: x-large;
+  font-family: "Courier New", Courier, monospace;
+  color: #f7dbb9;
+  -webkit-text-stroke-width: 0.4px;
+  -webkit-text-stroke-color: #7e637e;
+  text-align: center;
+  margin: 100px;
+}
+
 #main {
-  color: rgb(71, 137, 102);
+  color: #5a4556;
 }
 
 #Welcome {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 50px;
+  color: #5a4556;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #efbaad;
+  paint-order: stroke;
+}
+
+#scroll {
+  display: none;
+  position: fixed;
+  bottom: 35px;
+  right: 35px;
+  text-align: center;
+  color: #5a4556;
+  font-family: "Courier New", Courier, monospace;
+  background-color: #f7dbb9;
+  font-size: 20px;
+  width: 300px;
+  height: 30px;
+  align-items: center;
+}
+
+#scroll:hover {
+  color: #f7dbb9;
+  background-color: #5a4556;
 }
