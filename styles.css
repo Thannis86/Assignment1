@@ -1,0 +1,13 @@
+.menu {
+  display: flex;
+  color: #73a788;
+  height: 100px;
+  width: 100px;
+}
+
+.menu:hover {
+}
+
+#main {
+  color: rgb(71, 137, 102);
+}
