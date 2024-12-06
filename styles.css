@@ -1,13 +1,53 @@
-.menu {
-  display: flex;
-  color: #73a788;
-  height: 100px;
-  width: 100px;
+body {
+  /* Background image support
+    https://www.w3schools.com/cssref/pr_background-image.php 
+    https://www.w3schools.com/cssref/css3_pr_background-size.php
+    background-size sets the size of the image I'm using as a background. 100% has it fit to screen based on the width of the browser 
+    background-repeat selects whether the image will loop or not */
+  background-image: url(/Forest.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
-.menu:hover {
+.menu {
+  display: flex;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  justify-content: space-evenly;
+  color: #73a788;
+  width: 800px;
+  font-size: 20px;
+  /* Text outline support
+  https://fluentsupport.com/how-to-create-outline-text-in-css/
+  -webkit-text-stroke-width determines the width of the outline
+  weebkit-text-stroke-color determines the colour of the outline
+  Unsure what -webkit is*/
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  /* Text outline further support
+  https://stackoverflow.com/questions/26634201/add-stroke-around-text-on-the-outside-with-css
+  paint-order changes how the stroke is filled (Might affect other colors too, but currently unsure). As I selected stroke, it turns the stroke into an actual outline, instead of creating the stroke inside the text */
+  paint-order: stroke;
+}
+
+.menu2:hover {
+  background-color: #e3c6ad;
+  -webkit-text-stroke-width: 0px;
+  -webkit-text-stroke-color: white;
+  border: solid 2px #e3c6ad;
+}
+
+.menu2 {
+  width: 160px;
+  border: solid 2px #73a788;
+  padding: 5px;
 }
 
 #main {
   color: rgb(71, 137, 102);
+}
+
+#Welcome {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 50px;
 }
