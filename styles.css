@@ -4,7 +4,7 @@ body {
     https://www.w3schools.com/cssref/css3_pr_background-size.php
     background-size sets the size of the image I'm using as a background. 100% has it fit to screen based on the width of the browser 
     background-repeat selects whether the image will loop or not */
-  background-image: url(/Forest.jpg);
+  background-image: url("https://i.imgur.com/qCGkD8b.jpeg");
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -24,13 +24,8 @@ header {
   text-align: center;
 }
 
-main {
-}
-
 footer {
-  display: flex;
   height: 1000px;
-  justify-content: center;
 }
 
 .menu {
@@ -46,7 +41,7 @@ footer {
   -webkit-text-stroke-width determines the width of the outline
   weebkit-text-stroke-color determines the colour of the outline
   Unsure what -webkit is*/
-  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #efbaad;
   /* Text outline further support
   https://stackoverflow.com/questions/26634201/add-stroke-around-text-on-the-outside-with-css
@@ -75,6 +70,21 @@ footer {
   -webkit-text-stroke-color: #7e637e;
   text-align: center;
   margin: 100px;
+}
+
+.OtherSites {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.OtherSites2 {
+  height: 200px;
+  width: 200px;
+  border: solid 5px transparent;
+}
+
+.OtherSites2:hover {
+  border: solid 5px black;
 }
 
 #main {
