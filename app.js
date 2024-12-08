@@ -33,22 +33,15 @@ topbutton.addEventListener("click", () => {
   });
 });
 
-// unfinished code trying to figure out how to set volume on page load
+// ChatGPT created, partially understood, wanted to protect your ears
+// The event that's being looked for is the DOM being loaded?
+// The if statement is targetting the new const 'audioElement' which is the Audio in the HTML file
+// audio.volume is adjusting the volume based on the number provided with is 0.1, so playing the file at 10% volume
 
-// const bgml = document.querySelector("#bgmv");
+document.addEventListener("DOMContentLoaded", function () {
+  const audioElement = document.getElementById("audioPlayer");
 
-// bgml.addEventListener("click", () => {
-//   bgm.volume = 0.1;
-// });
-
-// const bgmv = document.getElementById("#bgm");
-
-// bgmv.onloadeddata = function () {
-//   bgmv.volume = 0.1;
-// };
-
-// const audioPlayer = document.getElementById("#audioPlayer");
-
-// audioPlayer.onloadeddata = function () {
-//   audioPlayer.volume = 0.1;
-// };
+  if (audioElement) {
+    audioElement.volume = 0.1;
+  }
+});
